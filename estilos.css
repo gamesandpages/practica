@@ -15,6 +15,11 @@ body {
 .menu a:hover {
     color: gold;
 }
+.menu a.activo {
+    color: gold;
+    font-weight: bold;
+    border-bottom: 2px solid gold;
+}
 .menu-enlaces {
     display: flex;
     gap: 20px;
@@ -188,4 +193,39 @@ body {
     .tarjeta {
         min-width: 0;
     }
+}
+.formulario[hidden] {
+    display: none;
+}
+.gracias {
+    max-width: 400px;
+    padding: 20px;
+    border: 2px solid gold;
+    border-radius: 10px;
+}
+.gracias h2 {
+    color: navy;
+    margin-top: 0;
+}
+.gracias .nota {
+    color: #666;
+    font-size: 0.9rem;
+}
+.aviso {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background-color: navy;
+    color: white;
+    border: 2px solid gold;
+    padding: 12px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s, transform 0.3s;
+}
+.aviso.visible {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
 }
