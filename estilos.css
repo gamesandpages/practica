@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.menu {
+    display: flex;
+    gap: 20px;
+    background-color: navy;
+    padding: 15px;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+.menu a:hover {
+    color: gold;
+}
+.menu-enlaces {
+    display: flex;
+    gap: 20px;
+}
+.boton-menu {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+.contenido {
+    padding: 20px;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+}
+.formulario input,
+.formulario textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.formulario button {
+    background-color: navy;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.formulario button:hover {
+    background-color: gold;
+    color: navy;
+}
+ .tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.tarjeta {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.tarjeta:hover {
+    border-color: navy;
+}
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+.producto {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.producto:hover {
+    border-color: navy;
+}
+.producto img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+.producto h3 {
+    margin: 15px 10px 5px;
+}
+.precio {
+    color: navy;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 0 15px;
+}
+.boton-agregar {
+    background-color: navy;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.boton-agregar:hover {
+    background-color: gold;
+    color: navy;
+}
+.hero {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero h1 {
+    font-size: 3rem;
+    margin: 0 0 15px;
+    color: gold;
+}
+.hero p {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 0 0 30px;
+}
+.boton-hero {
+    display: inline-block;
+    background-color: gold;
+    color: navy;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+.boton-hero:hover {
+    background-color: white;
+    color: navy;
+}
+.pie {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}
+@media (max-width: 599px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .boton-menu {
+        display: block;
+    }
+    .menu-enlaces {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .menu-enlaces.abierto {
+        display: flex;
+    }
+    .hero {
+        padding: 50px 15px;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .tarjetas {
+        flex-direction: column;
+    }
+    .tarjeta {
+        min-width: 0;
+    }
+}
